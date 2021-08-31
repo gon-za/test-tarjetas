@@ -1,0 +1,71 @@
+ <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="TpFinalPalacio.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <a href="#/" class="button">agregar producto</a>
+    <a href="#/listar" class="button">ver productos</a>
+    <a href="#/buscar" class="button">buscar</a>
+  </nav>
+  <div id="notificacion"></div>
+  <div id="app"></div>
+
+  <form class="form-register">
+     <h1>Ingrese su Monto</h1><br>
+     <input class="controls" type="number" id='monto' placeholder="$" required min="100" max="100000">
+     <button class="boton" type="button" id="btn_calcular">Calcular</button><br><br>
+     <h4 id="monto_impreso"></h4>
+  </form>
+  <form class="form-register"> 
+    <h1>Ingrese su tarjeta</h1><br>
+ 
+     <div id='propiedades_tarjeta'> 
+    <label for="">Nombre</label>
+    <input id="nombre" class="controls" type="text" >
+
+    <label for="">Apellido</label>
+    <input id="apellido" class="controls" type="text"><br><br>
+
+    <label for="">N° tarjeta</label>
+    <input id='num-tarjeta'class="controls" type="number"><br><br>
+
+    <label for="date">Fecha de Vencimiento</label>
+    <input id='fecha' class="controls" type="date" name="date" id="date">
+
+    <label for="">PIN</label>
+    <input id='pin' class="controls" type="password"><br><br>
+    </div>
+
+     <!-- marcas de tarjetas -->
+     
+    <form class="marcasTarjetas" id="marcas_tarjetas">
+      <div id="marcas_tarjetas2">
+      <input id="visa1" type="radio" name="tarjeta" value="visa"> VISA<br><br>
+
+      <input type="radio" name="tarjeta" value="master"> Master Card<br><br>
+
+      <input type="radio" name="tarjeta" value="american"> American Express<br><br>
+
+      <input type="radio" name="tarjeta" value="cabal"> CABAL
+      <br><br>
+
+      <button class="boton" type="button" id="btn_submit">Submit</button><br><br>
+     
+    </div>
+    </form>
+    
+  </form><br>
+ 
+  <script src='main.js'></script>
+  <script src='router.js'></script>
+  <script src='producto.js'></script>
+  <script src='jquery-3.5.1.js'></script>
+ </body>
+</html>
